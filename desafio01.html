@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 01 - HTML</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    h1, h2, h3 {
+        color: #333;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #eee;
+    }
+    code {
+        background-color: #eee;
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+    .voltar {
+        margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+    <h1>📘 Primeiros Passos com HTML</h1>
+    <p>
+        Este projeto faz parte do desafio prático do bootcamp "Santander Front-End 2025" da DIO.
+        O objetivo é construir uma página HTML utilizando a estrutura básica da linguagem, aplicando 
+        os principais conceitos aprendidos ao longo das aulas. Cada seção deste site foi elaborada 
+        com o propósito de revisar, praticar e reforçar o conhecimento em HTML, demonstrando o uso 
+        correto das tags, boas práticas e fundamentos do desenvolvimento web.
+    </p>
+
+    <nav>
+        <h2 id="indice">📌 Índice</h2>
+        <ul>
+            <li><a href="#intro">Introdução ao HTML na prática</a></li>
+            <li><a href="#form">Trabalhando com formulários em HTML</a></li>
+            <li><a href="#estrutura">Estruturando seu HTML + formatação</a></li>
+            <li><a href="#midias">Trabalhando com mídias utilizando HTML</a></li>
+            <li><a href="#tabelas">Criando tabelas com HTML</a></li>
+            <li><a href="#cores">Cores e tipos de uso</a></li>
+            <li><a href="#semantico">Entendendo HTML semântico</a></li>
+            <li><a href="#tagspratica">Exemplos de todas as tags na prática</a></li>
+            <li><a href="#recursos">Recursos Complementares</a></li>
+        </ul>
+    </nav>
+
+<section id="intro">
+    <h2>Introdução ao HTML na prática</h2>
+    
+    <h2>🔧 Ferramentas Utilizadas</h2>
+    <ul>
+        <li><strong>VS Code:</strong> Editor de código-fonte.</li>
+        <li><strong>Live Server:</strong> Plugin para atualizar automaticamente o navegador.</li>
+        <li><strong>Git:</strong> Sistema de controle de versão.</li>
+        <li><strong>GitHub:</strong> Plataforma de hospedagem de repositórios.</li>
+        <li><strong>Google Chrome:</strong> Navegador com Ferramentas do Desenvolvedor.</li>
+        <li><strong>Notion:</strong> Organização e anotações dos estudos.</li>
+    </ul>
+    
+    <p>Também entendemos a estrutura básica de uma página HTML, com destaque para:</p>
+    
+    <ul>
+        <li><strong>Tags semânticas</strong> e seus atributos</li>
+        <li>Textos, listas ordenadas (<code>&lt;ol&gt;</code>) e não ordenadas (<code>&lt;ul&gt;</code>)</li>
+        <li>Links com <code>&lt;a&gt;</code></li>
+    </ul>
+    <div class="voltar"><a href="#indice">🔝 Voltar ao Índice</a></div>
+</section>
+
+    <h2>🔍 Estrutura Básica do HTML</h2>
+    <p>O HTML é a linguagem usada para criar páginas web. Sua estrutura básica inclui:</p>
+    
+    <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da Página&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        Conteúdo da página...
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+
+    <div class="voltar"><a href="#indice">🔝 Voltar ao índice</a></div>
+
+    <h3>📌 Tabela de Tags Básicas</h3>
+    <table>
+        <tr><th>Tag</th><th>Descrição</th><th>Quando usar</th></tr>
+        <tr><td><code>&lt;h1&gt; ... &lt;/h1&gt;</code></td><td>Título principal</td><td>Para o título mais importante da página</td></tr>
+        <tr><td><code>&lt;p&gt;</code></td><td>Parágrafo</td><td>Para escrever blocos de texto</td></tr>
+        <tr><td><code>&lt;a href=""&gt;</code></td><td>Link</td><td>Para navegar entre páginas</td></tr>
+        <tr><td><code>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</code></td><td>Listas</td><td>Listas ordenadas ou não</td></tr>
+    </table>
+    <div class="voltar"><a href="#indice">🔝 Voltar ao índice</a></div>
+
+    <h2 id="form">📝 Trabalhando com Formulários</h2>
+    <p>Formulários permitem interatividade, como enviar dados:</p>
+    <table>
+        <tr><th>Tag</th><th>Descrição</th></tr>
+        <tr><td><code>&lt;form&gt;</code></td><td>Define o formulário</td></tr>
+        <tr><td><code>&lt;input&gt;</code></td><td>Campo de entrada (text, email, password...)</td></tr>
+        <tr><td><code>&lt;textarea&gt;</code></td><td>Campo de texto longo</td></tr>
+        <tr><td><code>&lt;select&gt;</code></td><td>Menu suspenso</td></tr>
+        <tr><td><code>&lt;button&gt;</code></td><td>Botão de ação</td></tr>
+    </table>
+    <div class="voltar"><a href="#indice">🔝 Voltar ao índice</a></div>
+
+    <h2 id="estrutura">🎨 Estruturação e Formatação</h2>
+    <p>Tags usadas para formatar e estruturar conteúdo:</p>
+    <table>
+        <tr><th>Tag</th><th>Função</th></tr>
+        <tr><td><code>&lt;strong&gt;</code></td><td>Texto em negrito com ênfase</td></tr>
+        <tr><td><code>&lt;i&gt;</code></td><td>Texto em itálico</td></tr>
+        <tr><td><code>&lt;u&gt;</code></td><td>Texto sublinhado</td></tr>
+        <tr><td><code>&lt;mark&gt;</code></td><td>Texto marcado</td></tr>
+        <tr><td><code>&lt;sup&gt;</code> / <code>&lt;sub&gt;</code></td><td>Expoente e índice</td></tr>
+        <tr><td><code>&lt;blockquote&gt;</code></td><td>Citação em bloco</td></tr>
+        <tr><td><code>&lt;font&gt;</code></td><td>Formatação de fonte (obsoleta)</td></tr>
+    </table>
+    <div class="voltar"><a href="#indice">🔝 Voltar ao índice</a></div>
+
+    <h2 id="midias">📷 Mídias no HTML</h2>
+    <p>O HTML possui tags para inclusão de mídias. Sua estrutura básica inclui as tags:</p>
+    <table>
+        <tr><th>Tag</th><th>Uso</th></tr>
+        <tr><td><code>&lt;img&gt;</code></td><td>Inserção de imagens</td></tr>
+        <tr><td><code>&lt;audio&gt;</code></td><td>Reproduzir áudio</td></tr>
+        <tr><td><code>&lt;video&gt;</code></td><td>Reproduzir vídeo</td></tr>
+        <tr><td><code>&lt;track&gt;</code></td><td>Legendas em mídias</td></tr>
+        <tr><td><code>&lt;iframe&gt;</code></td><td>Conteúdo externo incorporado</td></tr>
+    </table>
+    <div class="voltar"><a href="#indice">🔝 Voltar ao índice</a></div>
+
+    <h2 id="tabelas">📊 Tabelas no HTML</h2>
+    <p>O HTML possui tags para criação de tabelas. Sua estrutura básica inclui as tags:</p>
+    <table>
+        <tr><th>Tag</th><th>Função</th></tr>
+        <tr><td><code>&lt;table&gt;</code></td><td>Cria uma tabela</td></tr>
+        <tr><td><code>&lt;tr&gt;</code></td><td>Cria uma linha</td></tr>
+        <tr><td><code>&lt;td&gt;</code></td><td>Coluna de dados</td></tr>
+        <tr><td><code>&lt;th&gt;</code></td><td>Cabeçalho</td></tr>
+        <tr><td><code>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</code></td><td>Seções da tabela</td></tr>
+    </table>
+    <div class="voltar"><a href="#indice">🔝 Voltar ao índice</a></div>
+
+    <h3 id="cores">🎨 Cores e tipos de cor</h3>
+    <p>O HTML possui tags para definição de cores. Sua estrutura básica inclui as tags:</p>
+    <ul>
+        <li><strong>RGB:</strong> Ex: <code>rgb(255, 0, 0)</code> é vermelho puro.</li> 
+        <li><strong>HEX:</strong> Ex: <code>#FF0000</code> também é vermelho puro.</li>
+        <li><strong>HSL:</strong> Ex: <code>hsl(0, 100%, 50%)</code>.</li>
+        <li><strong>RGBA:</strong> Ex: <code>rgba(255, 0, 0, 0.5)</code>.</li>
+        <li><strong>HSLA:</strong> Ex: <code>hsla(120, 100%, 50%, 0.3)</code>.</li>
+    </ul>
+    <div class="voltar"><a href="#indice">🔝 Voltar ao índice</a></div>
+
+    <h2 id="semantico">🧠 HTML Semântico e Acessibilidade</h2>
+    <p>HTML semântico usa tags que descrevem o conteúdo, melhorando o SEO e a acessibilidade.</p>
+    <table>
+        <tr><th>Tag</th><th>Função</th></tr>
+        <tr><td><code>&lt;main&gt;</code></td><td>Conteúdo principal</td></tr>
+        <tr><td><code>&lt;header&gt;</code></td><td>Cabeçalho</td></tr>
+        <tr><td><code>&lt;footer&gt;</code></td><td>Rodapé</td></tr>
+        <tr><td><code>&lt;nav&gt;</code></td><td>Navegação</td></tr>
+        <tr><td><code>&lt;section&gt;</code></td><td>Seções de conteúdo</td></tr>
+        <tr><td><code>&lt;aside&gt;</code></td><td>Conteúdo lateral</td></tr>
+        <tr><td><code>&lt;article&gt;</code></td><td>Conteúdo independente</td></tr>
+        <tr><td><code>&lt;figure&gt;, &lt;figcaption&gt;</code></td><td>Imagens com legenda</td></tr>
+    </table>
+    <p><strong>Acessibilidade:</strong> uso correto de <code>alt</code> em imagens e atributos <code>aria</code>.</p>
+    <p><strong>SEO:</strong> otimização para mecanismos de busca. Ferramentas como <em>crawler</em> e <em>googlebot</em> analisam seu HTML.</p>
+    <div class="voltar"><a href="#indice">🔝 Voltar ao índice</a></div>
+
+    <!-- NOVA SEÇÃO COM TODAS AS TAGS -->
+    <h2 id="tagspratica">📑 Exemplos de Tags na Prática</h2>
+
+    <h3>🔠 Hierarquia de Títulos</h3>
+    <h1>Exemplo H1 - Título Principal</h1>
+    <h2>Exemplo H2 - Subtítulo</h2>
+    <h3>Exemplo H3</h3>
+    <h4>Exemplo H4</h4>
+    <h5>Exemplo H5</h5>
+    <h6>Exemplo H6 - Menor título</h6>
+
+    <hr>
+
+    <h3>✍️ Texto e Formatação</h3>
+    <p>Um parágrafo com <mark>destaque</mark>, <small>texto pequeno</small>, 
+    <i>itálico</i>, <u>sublinhado</u>, <strong>negrito</strong>, e até <del>texto riscado</del>.</p>
+
+    <p>Exemplo de fórmulas: H<sub>2</sub>O e x<sup>2</sup> + y<sup>2</sup>.</p>
+
+    <blockquote>
+        "O HTML é a espinha dorsal da web. 
+        Sem ele, não existiria a estrutura que conhecemos hoje." 
+        <br> — <i>Desenvolvedor Anônimo</i>
+    </blockquote>
+
+    <hr>
+
+    <h3>📋 Listas</h3>
+    <p>Lista ordenada:</p>
+    <ol>
+        <li>Aprender HTML</li>
+        <li>Estudar CSS</li>
+        <li>Praticar JavaScript</li>
+    </ol>
+
+    <p>Lista não ordenada:</p>
+    <ul>
+        <li>🍎 Maçã</li>
+        <li>🍊 Laranja</li>
+        <li>🍌 Banana</li>
+    </ul>
+
+    <hr>
+
+    <h3>🔗 Links e Abreviações</h3>
+    <p>
+        Saiba mais sobre a 
+        <abbr title="HyperText Markup Language">HTML</abbr> 
+        clicando <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">aqui</a>.
+    </p>
+
+    <hr>
+
+    <h3>🎨 Tag <font></h3>
+    <p>
+        Exemplo com <font color="blue" size="4">texto azul</font> e 
+        <font color="red" face="Courier">texto vermelho em Courier</font>.
+        <br><small>(Obs: a tag <font> é obsoleta, mas foi incluída para o desafio)</small>
+    </p>
+
+    <div class="voltar"><a href="#indice">🔝 Voltar ao índice</a></div>
+
+    <h2 id="recursos">📚 Recursos Complementares</h2>
+    <p>Para aprofundar seus conhecimentos em <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>, 
+    aqui estão alguns materiais e cursos gratuitos e acessíveis:</p> 
+<ul> 
+    <li> 🔗 <strong>HTML e CSS para Iniciantes - Curso Completo</strong>
+        <br>
+        <a href="https://www.youtube.com/watch?v=3oSIqIqzN3M" target="_blank">Assista no YouTube (Curso em vídeo)</a> 
+    </li> 
+    <li> 🔗 <strong>Curso JavaScript Completo</strong>
+        <br> 
+        <a href="https://www.youtube.com/watch?v=vEwPnjqWQ-g&list=PL2Fdisxwzt_d590u3uad46W-kHA0PTjjw&ab_channel=Programa%C3%A7%C3%A3oWeb" target="_blank">Assista no YouTube (Programação Web)</a>
+    </li> 
+    <li> 🔗 <strong>Trilha HTML + CSS - DIO</strong>
+        <br> 
+        <a href="https://web.dio.me/course/introducao-criacao-de-websites-com-html5-e-css3/learning/462f831d-5fdf-485e-bf07-1d391eb94ac8?autoplay=1" target="_blank">Acesse a trilha na DIO</a>
+    </li> 
+    <li> 🔗 <strong>Formação JavaScript Developer - DIO</strong>
+        <br> 
+        <a href="https://web.dio.me/track/formacao-javascript-developer" target="_blank">Acesse a trilha na DIO</a> 
+    </li>
+    <li> 🔗 <strong>Documentação Oficial HTML</strong>
+        <br> 
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
