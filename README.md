@@ -44,6 +44,7 @@ Tenho experiência com e-commerce, marketing digital, fotografia comercial, retr
   - [🌍 Sobre a DIO](#-sobre-a-dio)
   - [🗓️ Cronograma](#️-cronograma)
   - [🔗 Contatos](#-contatos)
+  - [✅Desafios](#desafios)
 
 ---
 
@@ -107,6 +108,7 @@ A **DIO (Digital Innovation One)** é uma das maiores plataformas de educação 
 
 ## 🗓️ Cronograma
 
+* Princípios de Desenvolvimento web
 * Primeiros Passos com HTML
 * Fundamentos do CSS
 * Posicionamento com Flexbox e Grid
@@ -126,5 +128,11 @@ A **DIO (Digital Innovation One)** é uma das maiores plataformas de educação 
 [![Instagram](https://img.shields.io/badge/Instagram-@_edumachado-purple?logo=instagram)](https://www.instagram.com/_edumachado/)
 
 ---
+
+## ✅Desafios
+
+* Criar Uma Página Web Utilizando as Tags Aprendidas
+* Recriando o Wikipedia com Layout Moderno
+* Criando sua primeira Landing Page com HTML e CSS
 
 > 🌟 Repositório em constante evolução. Acompanhe as atualizações e fique por dentro da minha jornada Front-End!
