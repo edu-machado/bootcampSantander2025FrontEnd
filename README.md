@@ -44,7 +44,7 @@ Tenho experiência com e-commerce, marketing digital, fotografia comercial, retr
   - [🌍 Sobre a DIO](#-sobre-a-dio)
   - [🗓️ Cronograma](#️-cronograma)
   - [🔗 Contatos](#-contatos)
-  - [✅Desafios](#desafios)
+  - [\[🏁Desafios\] (http://127.0.0.1:5501/bootcampSantander2025FrontEnd/index.html)](#desafios-http1270015501bootcampsantander2025frontendindexhtml)
 
 ---
 
@@ -129,7 +129,8 @@ A **DIO (Digital Innovation One)** é uma das maiores plataformas de educação 
 
 ---
 
-## ✅Desafios
+## [🏁Desafios] (http://127.0.0.1:5501/bootcampSantander2025FrontEnd/index.html)
+[🔗 Acesse a plataforma DIO](https://www.dio.me)
 
 * Criar Uma Página Web Utilizando as Tags Aprendidas
 * Recriando o Wikipedia com Layout Moderno
